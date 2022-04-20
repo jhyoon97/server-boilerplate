@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "plugins": ["prettier"],
+  "extends": ["naver", "plugin:prettier/recommended"],
+  "rules": {
+    "no-console": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}

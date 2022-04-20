@@ -1,0 +1,40 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=local nodemon -e .* --exec babel-node ./src/app.js",
+    "develop": "cross-env NODE_ENV=develop node build/app.js",
+    "production": "cross-env NODE_ENV=production node build/app.js",
+    "build": "babel src -d build --copy-files"
+  },
+  "author": "YoonJihwan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "4.1.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.1",
+    "dotenv": "^16.0.0",
+    "eslint-config-naver": "^2.1.0",
+    "express": "^4.17.3",
+    "express-bearer-token": "^2.4.0",
+    "express-cache-controller": "^1.1.0",
+    "morgan": "^1.10.0"
+  }
+}
